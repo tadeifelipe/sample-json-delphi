@@ -8,6 +8,7 @@ uses
 
 begin
   Application.Initialize;
+  ReportMemoryLeaksOnShutdown := True;
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TFrm_SampleJSON, Frm_SampleJSON);
   Application.Run;
