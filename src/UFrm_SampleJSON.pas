@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, System.JSON;
 
 type
-  TForm1 = class(TForm)
+  TFrm_SampleJSON = class(TForm)
     Button1: TButton;
     Button2: TButton;
     Memo1: TMemo;
@@ -18,7 +18,7 @@ type
   end;
 
 var
-  Form1: TForm1;
+  Frm_SampleJSON: TFrm_SampleJSON;
 
 implementation
 

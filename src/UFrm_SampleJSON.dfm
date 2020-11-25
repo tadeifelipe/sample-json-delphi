@@ -1,4 +1,4 @@
-object Form1: TForm1
+object Frm_SampleJSON: TFrm_SampleJSON
   Left = 0
   Top = 0
   Caption = 'Sample Make and Read JSON'

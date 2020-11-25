@@ -98,9 +98,8 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="UFrm_SampleJSON.pas">
-            <Form>Form1</Form>
-            <FormType>dfm</FormType>
+        <DCCReference Include="src\UFrm_SampleJSON.pas">
+            <Form>Frm_SampleJSON</Form>
         </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
