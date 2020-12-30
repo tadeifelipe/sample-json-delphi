@@ -51,7 +51,7 @@ object Frm_SampleJSON: TFrm_SampleJSON
       Height = 49
       Caption = 'Read JSON'
       TabOrder = 0
-      OnClick = Button1Click
+      OnClick = Button2Click
     end
     object Memo2: TMemo
       Left = 8

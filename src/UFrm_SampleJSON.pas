@@ -15,6 +15,7 @@ type
     Button2: TButton;
     Memo2: TMemo;
     procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -71,6 +72,27 @@ begin
     end;
 
     Memo1.Lines.Add(JsonArrayOrder.ToString);
+
+  finally
+    JsonArrayOrder.Free;
+  end;
+end;
+
+procedure TFrm_SampleJSON.Button2Click(Sender: TObject);
+var JsonArrayOrder: TJSONArray;
+  Json: String;
+  i: Byte;
+begin
+  try
+    //Get JSON String Web Service
+    Json := Trim(Memo1.Lines.Text);
+
+    JsonArrayOrder := TJSONObject.ParseJSONValue(TEncoding.UTF8.GetBytes(Json), 0) as TJSONArray;
+
+    for i := 0 to Pred(JsonArrayOrder.Count) do
+    begin
+      ShowMessage(JsonArrayOrder.Get(i).GetValue<Integer>('orderId').ToString);
+    end;
 
   finally
     JsonArrayOrder.Free;
