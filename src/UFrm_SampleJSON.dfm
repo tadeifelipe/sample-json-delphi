@@ -20,8 +20,8 @@ object Frm_SampleJSON: TFrm_SampleJSON
     Height = 447
     TabOrder = 0
     object Button1: TButton
-      Left = 3
-      Top = 3
+      Left = 8
+      Top = 2
       Width = 123
       Height = 49
       Caption = 'Make JSON'
@@ -45,7 +45,7 @@ object Frm_SampleJSON: TFrm_SampleJSON
     Height = 447
     TabOrder = 1
     object Button2: TButton
-      Left = 3
+      Left = 8
       Top = 3
       Width = 123
       Height = 49

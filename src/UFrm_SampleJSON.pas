@@ -91,7 +91,11 @@ begin
 
     for i := 0 to Pred(JsonArrayOrder.Count) do
     begin
-      ShowMessage(JsonArrayOrder.Get(i).GetValue<Integer>('orderId').ToString);
+      Memo2.Lines.Add(Format('Id: %d' + sLineBreak
+                           + 'Client: %s',[JsonArrayOrder.Get(i).GetValue<Integer>('orderId'),
+                                          JsonArrayOrder.Get(i).GetValue<String>('client')]));
+
+      //Items here
     end;
 
   finally
